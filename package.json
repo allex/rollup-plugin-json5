@@ -1,0 +1,33 @@
+{
+  "name": "rollup-plugin-json5",
+  "version": "1.0.0",
+  "description": "Convert json config files to ES6 modules.",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "jsnext:main": "lib/index.esm.js",
+  "author": "Allex Wang <allex.wxn@gmail.com>",
+  "repository": "allex/rollup-plugin-json5",
+  "scripts": {
+    "test": "mocha",
+    "pretest": "npm run build",
+    "build": "rollup-worker -c",
+    "prebuild": "rm -rf dist/*",
+    "prepare": "npm run build",
+    "precommit": "lint-staged",
+    "postcommit": "git reset",
+    "lint": "eslint --fix src test/test.js"
+  },
+  "dependencies": {
+    "json5": "^0.5.1",
+    "rollup-pluginutils": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "rollup-worker": "next"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "license": "MIT"
+}
