@@ -2,7 +2,7 @@
 
 Convert json config files to ES6 modules. default support `*.json`, `.babelrc`
 
-based on [rollup-plugin-json5](https://www.npmjs.com/package/rollup-plugin-json)
+based on [rollup-plugin-json](https://www.npmjs.com/package/rollup-plugin-json)
 
 ```js
 // import a single property from a JSON file,
